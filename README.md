@@ -14,6 +14,7 @@ drive.mount('/content/drive')
 
 
 ```python
+#Loading the pubmed dataset
 import pandas as pd
 
 df = pd.read_csv("/content/drive/MyDrive/PubMed_records_for_covid-19_labelled&unlabelled.xlsx - Sheet1 (1).csv")
