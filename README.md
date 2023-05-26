@@ -1,22 +1,6 @@
 # SentenceClassification
 This project was done as part of Information Retrieval course assignment where we had to build a model using Text GCN to classify the documents. We have used Text GCN and its extension Bert GCN to build the models
 
-![](RackMultipart20230526-1-ow69lj_html_4b7a49b9f2a0362f.png)
-
-**CS F469**
-
-**Information Retrieval Project Report**
-
-**Second Semester 2022-23**
-
-Submitted by:
-
-**Mayank Gupta (2022H1030099P)**
-
-**Padshah Rohan Chirag (2022H1030121P)**
-
-Instructor-in-Charge: **Dr**. **Vinti Agarwal**
-
 **Problem Statement:**
 
 - The objective of the assignment is to identify the medical research proposals which involve studying the SARS-CoV-2 model.
