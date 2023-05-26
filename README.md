@@ -7,6 +7,14 @@ This project was done as part of Information Retrieval course assignment where w
 
 - Develop a machine learning model which can classify the research proposals on the basis of submitted title, keywords and abstract information (AKT)
 
+# To Run
+- You can directly run the notebook on google colab. Make sure to copy the pubmed dataset file from this repository to drive
+
+- You will require a GPU to run this code. You can select GPU in the runtime option in colab
+
+-To run on your local system change the input from your drive to local system 
+
+
 **Steps Followed**
 
 **Cleaning the Data and Preparing the Graph**
