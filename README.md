@@ -13,7 +13,7 @@ This project was done as part of Information Retrieval course assignment where w
 
 - Upon examining our data, we identified the presence of additional columns that needed to be cleaned. To address this, we created a new dataframe that includes the Title, Article Keywords, Article Abstract, and Contextual columns. The Contextual column indicates whether the record is related to COVID or not.
 
-![](RackMultipart20230526-1-ow69lj_html_cace3366a4c4def7.png)
+![](https://github.com/mayanku/SentenceClassification/blob/main/dataframe.png)
 
 - To clean the data, we initially converted all columns to lowercase. Next, we removed stopwords from each column using the nltk package and its stopwords file. We also eliminated punctuation from the data, except for the hyphen ("-"). Through various permutations, we discovered that the hyphen is important, particularly in terms like "COVID-19," so we decided to retain it.
 
