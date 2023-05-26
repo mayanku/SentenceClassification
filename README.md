@@ -17,11 +17,11 @@ This project was done as part of Information Retrieval course assignment where w
 
 - To clean the data, we initially converted all columns to lowercase. Next, we removed stopwords from each column using the nltk package and its stopwords file. We also eliminated punctuation from the data, except for the hyphen ("-"). Through various permutations, we discovered that the hyphen is important, particularly in terms like "COVID-19," so we decided to retain it.
 
-![](RackMultipart20230526-1-ow69lj_html_25962f59027fb4ec.png)
+![](https://github.com/mayanku/SentenceClassification/blob/main/data_clean.png)
 
 - Train-Test Split: We performed various splits on our data. Initially, we used an 80:20 split without shuffling. During this step, we also created our test data, which excluded the Contextual information. Consequently, our training data consisted of the following: df\_train = pd.concat([df\_train, df\_test\_without\_contextual, df\_unlabeled]).
 
-![](RackMultipart20230526-1-ow69lj_html_bc02fb5eb1eec94d.png)
+![](https://github.com/mayanku/SentenceClassification/blob/main/train_test.png)
 
 - Considering that the majority of our data was unlabeled, with limited labeled data, we opted to employ the TextGCN model. The input for this model is a graph, and to construct the graph, we utilized a matrix of dimensions (n+m)\*(n+m), where n represents the number of documents and m denotes the total number of unique words. To populate the matrix, we utilized tf-idf values for relationships between words and documents. For relationships between words, we utilized PMI scores. Additionally, each word and document included a self-loop, resulting in diagonal entries with a value of 1. To represent this matrix, we employed a sparse matrix as follows:
 
@@ -29,14 +29,15 @@ This project was done as part of Information Retrieval course assignment where w
 
 - With this, our graph-building process is complete.
 
-![](RackMultipart20230526-1-ow69lj_html_61da375f8c7dbe40.png)
+
+![](https://github.com/mayanku/SentenceClassification/blob/main/matrix.png)
+
 
 **Model Creation**
 
 Our Initial Feature matrix consists of one hot vector of size equal to the number of nodes in our graph.
 
-![](RackMultipart20230526-1-ow69lj_html_4ac4c695e5a5fa8e.png)
-
+![](https://github.com/mayanku/SentenceClassification/blob/main/feature.png)
 **Label Matrix:**
 
 - The label matrix consists of a y vector, where:
