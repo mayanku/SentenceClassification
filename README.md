@@ -12,10 +12,10 @@ This project was done as part of Information Retrieval course assignment where w
 
 - You will require a GPU to run this code. You can select GPU in the runtime option in colab
 
--To run on your local system change the input from your drive to local system 
+- To run on your local system change the input from your drive to local system 
 
 
-**Steps Followed**
+# **Steps Followed**
 
 **Cleaning the Data and Preparing the Graph**
 
